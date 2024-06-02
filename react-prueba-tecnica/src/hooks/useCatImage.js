@@ -1,8 +1,9 @@
 
 import { useState, useEffect } from "react";
-export function useCatImage({fact}){
-    const CAT_PREFIX_IMAGE_URL = "https://cataas.com";
-    const [imageUrl, setImageUrl] = useState();
+const CAT_PREFIX_IMAGE_URL = "https://cataas.com";
+export function useCatImage({ fact }){
+   
+    const [imageUrl, setImageUrl] = useState('');
     
     // Para recuperar la imagen cada vez que tenemos una cita nueva
     useEffect(() =>{ 
